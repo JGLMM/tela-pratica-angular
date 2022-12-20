@@ -1,0 +1,26 @@
+
+
+<div id="leftconteiner" class="left-conteiner">
+  <h2>Busca</h2>
+  <br />
+  <div>
+    <div>
+      <input type="text" placeholder="Busca" class="box-busca-ciclo" />
+    </div>
+    <div>
+      <button class="botao-busca">Buscar</button>
+    </div>
+  </div>
+
+  <table>
+    <tr>
+      <th>Nome</th>
+      <th>Status</th>
+    </tr>
+
+    <tr *ngFor=" let salvo of salvandos">
+      <td>{{salvo.nome}}</td>
+      <td>{{salvo.status}}</td>
+    </tr>
+  </table>
+</div>

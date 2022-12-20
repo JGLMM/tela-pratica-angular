@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tela-pratica';
+  salvandos: any[] = [];
+
+
+  salvar($event){
+    console.log($event)
+    this.salvandos.push($event) ;
+  }
+
+
 }

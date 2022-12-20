@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ciclo</title>
+    <script src="app.js" defer></script>
+    <script src="validacao-ciclo.js" defer></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <header>
+        <a href="#" class="abrir-menu" onclick="abrirMenu()">&#9776;</a>
+        <img src="../imagens/profile.png" class="imgprofile" />
+        <img src="../imagens/Engrenagem.svg" class="imgsettings" />
+      </header>
+    </div>
+
+    <div>
+      <!--<nav id="menu">
+        <ul>
+          <li>
+            <a href="home.html"><img src="../imagens/iconemenus.svg" />Home</a>
+          </li>
+          <li>
+            <a href="ciclo.html"
+              ><img src="../imagens/iconemenus.svg" />Ciclos</a
+            >
+          </li>
+          <li>
+            <a href="unidade-ne.html"
+              ><img src="../imagens/iconemenus.svg" />Unidade de Negócio</a
+            >
+          </li>
+          <li>
+            <a href="fr-es.html"
+              ><img src="../imagens/iconemenus.svg" />Frente Estratégica</a
+            >
+          </li>
+          <li>
+            <a href="det-fr-es.html"
+              ><img src="../imagens/iconemenus.svg" />Detalhamento Frentes
+              Estratégicas</a
+            >
+          </li>
+        </ul>
+      </nav> -->
+
+      <main id="conteudo">
+
+
+        <div id="rightconteiner" class="right-conteiner">
+          <h2>Ciclo</h2>
+          <br />
+          <div>
+            <form id="form" (ngSubmit)="salvar()">
+              <div class="right-first-line">
+                <!-- <label for="nome">Nome</label> -->
+                <input
+                  type="text"
+                  placeholder="Nome"
+                  class="box"
+                  id="nome"
+                  [(ngModel)]="nome"
+                  name="nome"
+                />
+
+                <select
+                  name="Status"
+                  id="Status"
+                  class="select"
+                  [(ngModel)]="status"
+                  name="status"
+                  defaultValue="{true}"
+                >
+                  <option name="ativo" value="ativo">Ativo</option>
+                  <option name="inativo" value="inativo">Inativo</option>
+                </select>
+              </div>
+
+              <div class="right-second-line">
+                <div class="data-corte">
+                  <!-- <label id="datadecorte">Data de Corte</label> -->
+                  <input
+                    type="date"
+                    placeholder="Data de Corte"
+                    class="box-data"
+                    id="datadecorte"
+                  />
+                </div>
+
+                <div class="data-dk">
+                  <!-- <label id="datadedk">Data de DK</label> -->
+                  <input
+                    type="date"
+                    placeholder="Data de DK"
+                    class="box-data"
+                    id="datadedk"
+                  />
+                </div>
+              </div>
+              <div class="btn-ciclo">
+                <input
+                  type="submit"
+                  value="Salvar"
+                  class="salvar"
+                  id="salvar-ciclo"
+                />
+                <input
+                  type="submit"
+                  value="Novo"
+                  class="novo"
+                  id="novo-ciclo"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
