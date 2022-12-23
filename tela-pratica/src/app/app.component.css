@@ -1,14 +1,22 @@
+html{
+  overflow-x: hidden;
+}
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0px;
   background-color: #f4f4f4;
   width: 100%;
   height: 100%;
 }
 
-h2{
-  font-weight:bolder;
+.cabecalho {
+  width: 100%;
+}
+
+h2 {
+  font-weight: bolder;
   color: #555555;
   font-size: 16px;
 }
@@ -18,32 +26,6 @@ a {
   font-style: rgb(66, 66, 66);
 }
 
-/*header*/
-.header{
-  background-color: #ea1a2c;
-  padding: 10px;
-  box-shadow: 0px 0px 8px rgb(147, 147, 147);
-  z-index: 3;
-  width: 100%;
-  height: 50px;
-  margin-top: 0px;
-  position: fixed;
-}
-
-.imgprofile {
-  max-width: 40px;
-  margin-right: 20px;
-  float: right;
-  padding-top: 5px;
-}
-
-.imgsettings{
-  max-width: 40px;
-  margin-right: 12px;
-  float: right;
-  padding-top: 5px;
-}
-
 /*menu*/
 .abrir-menu {
   color: white;
@@ -51,7 +33,7 @@ a {
   padding: 5px 10px 10px 10px;
 }
 
-nav{
+nav {
   height: 100%;
   width: 20%;
   background-color: white;
@@ -64,13 +46,13 @@ nav{
   transition: width 0.3s;
 }
 
-ul{
+ul {
   list-style-type: none;
   padding: 8px 0px 10px 0px;
 }
 
 nav a {
-  color:rgb(66, 66, 66);
+  color: rgb(66, 66, 66);
   font-size: 12px;
   display: block;
   padding: 10px 10px 10px 0px;
@@ -78,7 +60,7 @@ nav a {
 }
 
 nav a:hover {
-  color:rgb(66, 66, 66);
+  color: rgb(66, 66, 66);
   background-color: rgb(234, 234, 234);
 }
 
@@ -87,19 +69,31 @@ img {
   align-content: center;
 }
 
-
 /*main*/
-main{
+main {
   width: 80%;
   margin: 0px 0px 0px 20%;
   padding: 10px;
   transition: margin-left 0.9;
 }
 
+.left-side {
+  float: left;
+  width: 48%;
+  height: 60%;
+  background-color: white;
+  margin: 90px 20px 20px 0px;
+}
 
+.right-side {
+  float: right;
+  width: 48%;
+  height: 60%;
+  margin: 90px 20px 20px 0px;
+}
 
 /*footer*/
-footer{
+footer {
   text-align: center;
   background-color: white;
   position: absolute;
@@ -110,7 +104,7 @@ footer{
   margin: 0% 0px 0px 0px;
 }
 
-.footer-text{
+.footer-text {
   padding: 15px;
   color: #424242;
   font-size: 13px;

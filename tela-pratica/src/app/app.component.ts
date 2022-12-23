@@ -15,5 +15,4 @@ export class AppComponent {
     this.salvandos.push($event) ;
   }
 
-
 }

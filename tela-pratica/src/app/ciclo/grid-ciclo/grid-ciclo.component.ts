@@ -5,7 +5,8 @@ import { Component, Input } from '@angular/core';
   templateUrl: './grid-ciclo.component.html',
   styleUrls: [
     './grid-ciclo.component.css',
-    '../ciclo.component.css'
+    '../ciclo.component.css',
+    '../../app.component.css'
 ]
 })
 export class GridCicloComponent {

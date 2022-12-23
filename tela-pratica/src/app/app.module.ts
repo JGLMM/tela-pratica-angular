@@ -10,6 +10,7 @@ import { DetFrenteEstrategicaComponent } from './det-frente-estrategica/det-fren
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { GridCicloComponent } from './ciclo/grid-ciclo/grid-ciclo.component';
+import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { GridCicloComponent } from './ciclo/grid-ciclo/grid-ciclo.component';
     FrenteEstrategicaComponent,
     DetFrenteEstrategicaComponent,
     HomeComponent,
-    GridCicloComponent
+    GridCicloComponent,
+    CabecalhoComponent
   ],
   imports: [
     BrowserModule,

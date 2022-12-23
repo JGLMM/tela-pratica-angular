@@ -1,6 +1,15 @@
-<app-ciclo (aoSalvar)="salvar($event)"></app-ciclo>
+<body>
+  <div class="cabecalho">
+    <app-cabecalho></app-cabecalho>
+  </div>
 
-<app-grid-ciclo [salvandos]="salvandos"></app-grid-ciclo>
+  <main>
+    <div class="right-side">
+      <app-ciclo (aoSalvar)="salvar($event)"></app-ciclo>
+    </div>
 
-
-
+    <div class="left-side">
+      <app-grid-ciclo [salvandos]="salvandos"></app-grid-ciclo>
+    </div>
+  </main>
+</body>
